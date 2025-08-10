@@ -22,6 +22,9 @@ export function Abilities() {
           🤝What I bring To the Table
         </div>
       </div>
+      <div className="flex-center text-4xl mt-3 font-semibold">
+        How I Can Contribute & My Key Skills
+      </div>
     </div>
   );
 }

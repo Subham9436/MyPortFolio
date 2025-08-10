@@ -49,4 +49,26 @@ const abilities = [
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
-export { navLinks, words, counterItems, abilities };
+const techStackImgs = [
+  {
+    name: "React Developer",
+    imgPath: "assets/public/images/logos/react.png",
+  },
+  {
+    name: "Docker Developer",
+    imgPath: "assets/public/images/Adobe Express - file (1).png",
+  },
+  {
+    name: "Backend Developer",
+    imgPath: "assets/public/images/logos/node.png",
+  },
+  {
+    name: "Interactive Developer",
+    imgPath: "assets/public/images/logos/three.png",
+  },
+  {
+    name: "Project Manager",
+    imgPath: "assets/public/images/logos/git.svg",
+  },
+];
+export { navLinks, words, counterItems, abilities, techStackImgs };
