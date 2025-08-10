@@ -58,7 +58,7 @@ export function Hero() {
       </div>
       {/* Right Hero Model */}
       <figure>
-        <div className="size-95 border-red-200 border-2 md:p-10 ml-38">
+        <div className="size-95  md:p-10 ml-38">
           <Ranger />
         </div>
       </figure>

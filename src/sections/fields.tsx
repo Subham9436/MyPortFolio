@@ -7,10 +7,10 @@ export function EXP() {
         {counterItems.map((t) => (
           <div
             key={t.value}
-            className="p-10 mt-5 border-2 rounded-lg  w-75 bg-gray-700/45"
+            className="p-10 mt-5 border-2 rounded-lg  w-85 bg-gray-700/45"
           >
             <div>
-              <h1 className="text-3xl">
+              <h1 className="text-3xl font-extrabold">
                 {t.value}
                 {t.suffix}
               </h1>
