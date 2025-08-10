@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
+import { EXP } from "./sections/fields";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route />
       </Routes>
-      <Hero/>
+      <Hero />
+      <EXP/>
     </div>
   );
 }
