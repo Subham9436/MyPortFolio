@@ -7,6 +7,7 @@ import { Projects } from "./sections/projects";
 import { MarqueeText } from "./sections/marquee";
 import { Abilities } from "./sections/abilities";
 import { Skills } from "./sections/skills";
+import { Contact } from "./sections/contact";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <MarqueeText />
       <Abilities/>
       <Skills/>
+      <Contact/>
     </div>
   );
 }
