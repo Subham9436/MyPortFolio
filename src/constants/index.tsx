@@ -71,4 +71,22 @@ const techStackImgs = [
     imgPath: "assets/public/images/logos/git.svg",
   },
 ];
-export { navLinks, words, counterItems, abilities, techStackImgs };
+const socialImgs = [
+  {
+    name: "insta",
+    imgPath: "assets/public/images/insta.png",
+  },
+  {
+    name: "fb",
+    imgPath: "assets/public/images/fb.png",
+  },
+  {
+    name: "x",
+    imgPath: "assets/public/images/x.png",
+  },
+  {
+    name: "linkedin",
+    imgPath: "assets/public/images/linkedin.png",
+  },
+];
+export { navLinks, words, counterItems, abilities, techStackImgs, socialImgs };

@@ -32,15 +32,16 @@ export function Contact() {
                 <div className="mt-10 text-2xl">
                   <label>Your Message</label>
                 </div>
-                <input
-                  type="text"
+                <textarea
                   name="Your Name"
-                  placeholder="   How Can I Help You?"
-                  className="text-white bg-gray-700/45 w-86 rounded-lg h-45"
-                />
+                  placeholder="How Can I Help You?"
+                  className="text-white bg-gray-700/45 w-86 rounded-lg h-45 p-3 align-top"
+                ></textarea>
               </div>
             </div>
-            <button className="flex-center border-2 bg-white text-black rounded-lg w-56 h-10 ml-15 mt-8 font-semibold">Send Message</button>
+            <button className="flex-center border-2 bg-white text-black rounded-lg w-56 h-10 ml-15 mt-8 font-semibold">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
