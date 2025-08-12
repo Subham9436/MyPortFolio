@@ -1,13 +1,38 @@
+import { useGSAP } from "@gsap/react";
 import { words } from "../constants";
 import { Ranger } from "./ranger";
+import gsap from "gsap";
 
 export function Hero() {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".subtitle",
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        stagger: 1.5,
+        ease: "power2.inOut",
+      }
+    );
+    gsap.to("#arrow svg", {
+      y: 3,
+      repeat: -1,
+      duration: 1,
+      yoyo: true,
+    });
+  }, []);
+
   return (
     <div className="flex">
       <div>
-        <div>
+        <div className="subtitle">
           <div className="text-6xl font-semibold p-10">
-            <div className="flex">
+            <div className="flex" id="text">
               <h1>Shaping</h1>
               <span className="slide">
                 <span className="wrapper">
@@ -27,8 +52,8 @@ export function Hero() {
               </span>
             </div>
             <div>
-              into Real Projects
-              <br /> that Deliver Results
+              <span>into Real Projects</span>
+              <br /> <span>that Deliver Results</span>
             </div>
           </div>
           <span className="p-11 space-x-2 ">
@@ -39,6 +64,7 @@ export function Hero() {
           <button
             className="bg-white rounded-lg flex-center text-black p-3 font-semibold ml-10 mt-2 "
             style={{ cursor: "pointer" }}
+            id="arrow"
           >
             See My Work
             <svg

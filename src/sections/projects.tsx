@@ -1,6 +1,34 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 export function Projects() {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#images",
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#images",
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div className="flex justify-between p-2 md:flex-row flex-col items-center">
+    <div
+      className="flex justify-between p-2 md:flex-row flex-col items-center"
+      id="images"
+    >
       <div className="p-10">
         <div className="w-176 rounded-lg ">
           <img src="/assets/public/images/Screenshot (93).png" />

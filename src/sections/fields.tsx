@@ -1,5 +1,6 @@
 import { counterItems } from "../constants";
-
+import CountUp from "react-countup";
+// Use of React Countup
 export function EXP() {
   return (
     <div className="p-10">
@@ -7,12 +8,11 @@ export function EXP() {
         {counterItems.map((t) => (
           <div
             key={t.value}
-            className="p-10 mt-5 border-2 rounded-lg  w-85 bg-gray-700/45"
+            className="p-10 mt-5 border-2 rounded-lg  w-85 bg-zinc-900"
           >
             <div>
               <h1 className="text-3xl font-extrabold">
-                {t.value}
-                {t.suffix}
+                <CountUp suffix={t.suffix} end={t.value} />
               </h1>
             </div>
             <div>{t.label}</div>

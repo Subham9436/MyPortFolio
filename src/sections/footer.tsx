@@ -7,7 +7,9 @@ export function Footer() {
         <div>Visit My Blog</div>
         <div className="flex ml-10 space-x-5 md:ml-60">
           {socialImgs.map((t) => (
-            <img src={`${t.imgPath}`}></img>
+            <div key={t.name}>
+              <img src={`${t.imgPath}`}></img>
+            </div>
           ))}
         </div>
         <div>© 2025 Subham Kumar.All rights reserved</div>

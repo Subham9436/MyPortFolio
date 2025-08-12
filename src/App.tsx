@@ -9,8 +9,10 @@ import { Abilities } from "./sections/abilities";
 import { Skills } from "./sections/skills";
 import { Contact } from "./sections/contact";
 import { Footer } from "./sections/footer";
+import { ScrollTrigger, SplitText } from "gsap/all";
+import gsap from "gsap";
 
-
+gsap.registerPlugin(ScrollTrigger, SplitText);
 function App() {
   return (
     <div>
@@ -19,10 +21,10 @@ function App() {
       <EXP />
       <Projects />
       <MarqueeText />
-      <Abilities/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      <Abilities />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }
