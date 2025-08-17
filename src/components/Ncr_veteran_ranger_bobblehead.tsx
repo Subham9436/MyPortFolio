@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { Group } from "three";
 import type { GLTF } from "three-stdlib";
@@ -15,8 +15,8 @@ interface RangerModelProps {
 }
 
 export default function RangerModel({
-  url = "assets/public/models/ncr_veteran_ranger_bobblehead.glb", // <-- place your GLB in public/models
-  scale = 0.05,
+  url = "assets/public/models/optimized-room.glb", // <-- place your GLB in public/models
+  scale = 0.9,
   position = [0, 0, 0],
 }: RangerModelProps) {
   const group = useRef<Group>(null);
@@ -41,4 +41,4 @@ export default function RangerModel({
   );
 }
 
-useGLTF.preload("assets/public/models/ncr_veteran_ranger_bobblehead.glb");
+useGLTF.preload("assets/public/models/optimized-room.glb");

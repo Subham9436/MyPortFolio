@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 // Use of React Countup
 export function EXP() {
   return (
-    <div className="p-10">
+    <div className="p-10 mt-137 md:mt-11">
       <div className="flex justify-between">
         {counterItems.map((t) => (
           <div

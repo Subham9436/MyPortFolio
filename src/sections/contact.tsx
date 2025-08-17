@@ -1,3 +1,5 @@
+
+
 export function Contact() {
   return (
     <div>
@@ -45,6 +47,12 @@ export function Contact() {
           </form>
         </div>
       </div>
+      {/* Right 3-D Model */}
+      <figure>
+        <div>
+          
+        </div>
+      </figure>
     </div>
   );
 }

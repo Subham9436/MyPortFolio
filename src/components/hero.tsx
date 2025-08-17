@@ -28,7 +28,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <div>
         <div className="subtitle">
           <div className="text-6xl font-semibold p-10">
@@ -84,7 +84,7 @@ export function Hero() {
       </div>
       {/* Right Hero Model */}
       <figure>
-        <div className="size-95  md:p-10 ml-38">
+        <div className="hero-3d-layout mt-105  md:mt-45">
           <Ranger />
         </div>
       </figure>
