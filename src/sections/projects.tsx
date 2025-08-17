@@ -4,7 +4,7 @@ import gsap from "gsap";
 export function Projects() {
   useGSAP(() => {
     gsap.fromTo(
-      "#images",
+      "#work",
       {
         y: 100,
         opacity: 0,
@@ -16,7 +16,7 @@ export function Projects() {
         stagger: 0.3,
         ease: "power2.inOut",
         scrollTrigger: {
-          trigger: "#images",
+          trigger: "#work",
           start: "top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -27,7 +27,7 @@ export function Projects() {
   return (
     <div
       className="flex justify-between p-2 md:flex-row flex-col items-center"
-      id="images"
+      id="work"
     >
       <div className="p-10">
         <div className="w-176 rounded-lg ">

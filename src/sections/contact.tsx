@@ -2,7 +2,7 @@ import { BottomContact } from "../components/bottom-3d-model/bottomModel";
 
 export function Contact() {
   return (
-    <div>
+    <div id="form">
       <div className="flex-center text-4xl mt-3 font-semibold">
         Get in Touch – Let’s Connect
       </div>

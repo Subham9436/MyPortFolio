@@ -28,7 +28,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row" id="hero">
       <div>
         <div className="subtitle">
           <div className="text-6xl font-semibold p-10">
@@ -61,6 +61,7 @@ export function Hero() {
           </span>
         </div>
         <div>
+          <a href="#work">
           <button
             className="bg-white rounded-lg flex-center text-black p-3 font-semibold ml-10 mt-2 "
             style={{ cursor: "pointer" }}
@@ -80,6 +81,7 @@ export function Hero() {
               />
             </svg>
           </button>
+          </a>
         </div>
       </div>
       {/* Right Hero Model */}

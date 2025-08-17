@@ -2,11 +2,12 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import RangerModel from "./Ncr_veteran_ranger_bobblehead";
 import { HeroLights } from "./herolights";
+import Particles from "./Particles";
 
 export function Ranger() {
   const isTablet = false;
   return (
-    <Canvas camera={{ position: [0, 0, 12], fov: 45 }}>
+    <Canvas camera={{ position: [0, 3, 12], fov: 45 }}>
       <HeroLights/>
       <OrbitControls
         enablePan={false}
@@ -22,6 +23,7 @@ export function Ranger() {
         rotation={[0, -Math.PI / 4, 0]}
       >
         <RangerModel />
+        <Particles/>
       </group>
     </Canvas>
   );

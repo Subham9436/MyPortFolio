@@ -15,7 +15,12 @@ const navLinks = [
     name: "Testimonials",
     link: "#testimonials",
   },
+  
 ];
+const contactLink=[{
+  name:"ContactMe",
+  link:"#contact"
+}]
 const words = [
   { text: "Ideas", imgPath: "assets/public/images/ideas.svg" },
   { text: "Concepts", imgPath: "assets/public/images/concepts.svg" },
@@ -89,4 +94,36 @@ const socialImgs = [
     imgPath: "assets/public/images/linkedin.png",
   },
 ];
-export { navLinks, words, counterItems, abilities, techStackImgs, socialImgs };
+const techStackIcons = [
+  {
+    name: "React Developer",
+    modelPath: "assets/public/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Python Developer",
+    modelPath: "assets/public/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Backend Developer",
+    modelPath: "assets/public/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Interactive Developer",
+    modelPath: "assets/public/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Project Manager",
+    modelPath: "assets/public/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
+  },
+];
+export { navLinks, words, counterItems, abilities, techStackImgs, socialImgs,techStackIcons,contactLink };
