@@ -13,6 +13,9 @@ import gsap from "gsap";
 import { Toaster } from "react-hot-toast";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+//for optimizations
+
+
 function App() {
   return (
     <div>
