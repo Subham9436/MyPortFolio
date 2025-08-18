@@ -8,7 +8,9 @@ export function Footer() {
         <div className="flex ml-10 space-x-5 md:ml-60">
           {socialImgs.map((t) => (
             <div key={t.name}>
-              <img src={`${t.imgPath}`}></img>
+              <a href={`${t.link}`}>
+                <img src={`${t.imgPath}`}></img>
+              </a>
             </div>
           ))}
         </div>

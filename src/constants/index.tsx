@@ -81,18 +81,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "assets/public/images/insta.png",
+    link: "https://www.instagram.com/__subham.kumar__?igsh=MXB4NWZmYmN6ZHowaA==",
   },
   {
-    name: "fb",
-    imgPath: "assets/public/images/fb.png",
+    name: "YT",
+    imgPath: "assets/public/images/youtube_icon_white.png",
+    link: "https://www.youtube.com/@SubhamKumar-BuildToInspire",
   },
   {
     name: "x",
     imgPath: "assets/public/images/x.png",
+    link: "https://x.com/subham6531",
   },
   {
     name: "linkedin",
     imgPath: "assets/public/images/linkedin.png",
+    link: "https://www.linkedin.com/in/subham-kumar-315294250/",
   },
 ];
 const techStackIcons = [

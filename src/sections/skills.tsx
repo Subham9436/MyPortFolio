@@ -1,5 +1,5 @@
 import { SkillModel } from "../components/skillmodel/skils";
-import { techStackIcons, techStackImgs } from "../constants";
+import { techStackIcons } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
