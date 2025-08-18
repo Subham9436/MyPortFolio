@@ -15,12 +15,13 @@ const navLinks = [
     name: "Testimonials",
     link: "#testimonials",
   },
-  
 ];
-const contactLink=[{
-  name:"ContactMe",
-  link:"#contact"
-}]
+const contactLink = [
+  {
+    name: "ContactMe",
+    link: "#contact",
+  },
+];
 const words = [
   { text: "Ideas", imgPath: "assets/public/images/ideas.svg" },
   { text: "Concepts", imgPath: "assets/public/images/concepts.svg" },
@@ -102,9 +103,9 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "assets/public/models/python-transformed.glb",
-    scale: 0.8,
+    name: "Docker Developer",
+    modelPath: "assets/public/models/moby_dock_docker_whale.glb",
+    scale: 1.4,
     rotation: [0, 0, 0],
   },
   {
@@ -126,4 +127,13 @@ const techStackIcons = [
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
-export { navLinks, words, counterItems, abilities, techStackImgs, socialImgs,techStackIcons,contactLink };
+export {
+  navLinks,
+  words,
+  counterItems,
+  abilities,
+  techStackImgs,
+  socialImgs,
+  techStackIcons,
+  contactLink,
+};

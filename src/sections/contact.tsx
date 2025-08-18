@@ -3,6 +3,11 @@ import { BottomContact } from "../components/bottom-3d-model/bottomModel";
 export function Contact() {
   return (
     <div id="form">
+      <div className="flex-center">
+        <div className=" mt-5 border-2 rounded-full w-85 bg-gray-700/45 flex-center">
+          📄Have questions or ideas? Let’s talk!🚀
+        </div>
+      </div>
       <div className="flex-center text-4xl mt-3 font-semibold">
         Get in Touch – Let’s Connect
       </div>

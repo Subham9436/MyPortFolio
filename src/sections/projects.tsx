@@ -37,7 +37,7 @@ export function Projects() {
           <p>A UI for a Mocktail Website using GSAP Animations</p>
         </div>
       </div>
-      <div className="p-10">
+      <div className="md:mr-9">
         <div className="w-176 rounded-lg ">
           <img src="/assets/public/images/Screenshot (95).png" />
         </div>
