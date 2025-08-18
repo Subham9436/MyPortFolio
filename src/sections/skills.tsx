@@ -20,7 +20,6 @@ export function Skills() {
         scrollTrigger: {
           trigger: "#skills",
           start: "top center",
-          toggleActions: "play reverse play reverse",
         },
       }
     );

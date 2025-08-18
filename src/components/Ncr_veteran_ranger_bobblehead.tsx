@@ -15,7 +15,7 @@ interface RangerModelProps {
 }
 
 export default function RangerModel({
-  url = "assets/public/models/optimized-room.glb", // <-- place your GLB in public/models
+  url = "models/optimized-room.glb", // <-- place your GLB in public/models
   scale = 0.9,
   position = [0, 0, 0],
 }: RangerModelProps) {
@@ -35,10 +35,10 @@ export default function RangerModel({
   }, [actions, animations]);
 
   return (
-    <group ref={group} scale={scale} position={position} dispose={null}>
+    <group ref={group} scale={scale} position={position}>
       <primitive object={scene} />
     </group>
   );
 }
 
-useGLTF.preload("assets/public/models/optimized-room.glb");
+useGLTF.preload("models/optimized-room.glb");

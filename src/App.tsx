@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
@@ -11,11 +10,13 @@ import { Contact } from "./sections/contact";
 import { Footer } from "./sections/footer";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import gsap from "gsap";
+import { Toaster } from "react-hot-toast";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 function App() {
   return (
     <div>
+      <Toaster />
       <Navbar />
       <Hero />
       <EXP />

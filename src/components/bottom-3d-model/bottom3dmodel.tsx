@@ -15,7 +15,7 @@ interface RangerModelProps {
 }
 
 export default function BottomModel({
-  url = "assets/public/models/computer-optimized.glb", // <-- place your GLB in public/models
+  url = "models/computer-optimized.glb", // <-- place your GLB in public/models
   scale = 0.03,
   position = [0, 0, 0],
 }: RangerModelProps) {
@@ -35,10 +35,10 @@ export default function BottomModel({
   }, [actions, animations]);
 
   return (
-    <group ref={group} scale={scale} position={position} dispose={null}>
+    <group ref={group} scale={scale} position={position} >
       <primitive object={scene} />
     </group>
   );
 }
 
-useGLTF.preload("assets/public/models/computer-optimized.glb");
+useGLTF.preload("models/computer-optimized.glb");
