@@ -5,7 +5,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="p-4 bg-[url(/images/bg.png)] bg-cover">
+    <nav className="p-4 bg-[url(/images/bg.png)]">
       <div className="flex items-center justify-between bg-gray-700/35 rounded-lg px-6 py-4">
         {/* Logo */}
         <div className="font-semibold text-xl sm:text-2xl">
