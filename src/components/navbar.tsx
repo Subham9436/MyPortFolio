@@ -2,7 +2,7 @@ import { navLinks } from "../constants";
 
 export function Navbar() {
   return (
-    <nav className="p-10 bg-[url(assets/public/images/bg.png)] ">
+    <nav className="p-10 bg-[url(/images/bg.png)] ">
       <div className="flex-center bg-gray-700/35 rounded-lg p-5 justify-between ">
         <div className="font-semibold text-2xl">
           <a href="#hero">Subham Kumar</a>

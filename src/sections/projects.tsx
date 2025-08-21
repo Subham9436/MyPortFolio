@@ -54,7 +54,7 @@ export function Projects() {
         <a href="https://github.com/Subham9436/Gsap-Cocktails-Mojito">
           <div className="p-10">
             <div className="w-176 rounded-lg ">
-              <img src="/assets/public/images/Screenshot (93).png" />
+              <img src="/images/Screenshot (93).png" />
             </div>
             <div className="mt-3 flex-center text-2xl">
               <p>A UI for a Mocktail Website using GSAP Animations</p>
@@ -64,7 +64,7 @@ export function Projects() {
         <a href="">
           <div className="md:mr-9">
             <div className="w-176 rounded-lg ">
-              <img src="/assets/public/images/Screenshot (95).png" />
+              <img src="/images/Screenshot (95).png" />
             </div>
             <div className="text-2xl mt-3 flex-center">
               <p>A Complete TO-DO Application</p>
@@ -80,7 +80,7 @@ export function Projects() {
           <a href="https://github.com/Subham9436/Real-Time-Chat-Bot">
             <div className="p-10">
               <div className="w-176 rounded-lg ">
-                <img src="/public/images/Screenshot (97).png" />
+                <img src="/images/Screenshot (97).png" />
               </div>
               <div className="mt-3 flex-center text-2xl">
                 <p>Real Time Chat Application with Socket.io </p>
