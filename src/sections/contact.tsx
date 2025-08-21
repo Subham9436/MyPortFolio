@@ -4,25 +4,25 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
 export function Contact() {
-  const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [loading, setLoading] = useState(false);
   const [formdata, setFormdata] = useState({
     name: "",
     email: "",
     yourmsg: "",
   });
-  loading
+
   const handlechange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormdata({ ...formdata, [name]: value });
   };
+
   const handlesubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!formRef.current) {
-      return;
-    }
+    if (!formRef.current) return;
+
     setLoading(true);
     try {
       await emailjs.sendForm(
@@ -32,11 +32,7 @@ export function Contact() {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY!
       );
 
-      setFormdata({
-        name: "",
-        email: "",
-        yourmsg: "",
-      });
+      setFormdata({ name: "", email: "", yourmsg: "" });
       toast.success("Form Sent");
     } catch (err) {
       console.error("EmailJS Error:", err);
@@ -47,70 +43,84 @@ export function Contact() {
   };
 
   return (
-    <div id="form">
-      <div className="flex-center">
-        <div className=" mt-5 border-2 rounded-full w-85 bg-gray-700/45 flex-center">
-          📄Have questions or ideas? Let’s talk!🚀
+    <div id="form" className="px-4 sm:px-8 lg:px-16">
+      {/* Section Heading */}
+      <div className="flex justify-center">
+        <div className="mt-5 border-2 rounded-full px-6 py-2 bg-gray-700/45 text-center text-sm sm:text-base">
+          📄 Have questions or ideas? Let’s talk! 🚀
         </div>
       </div>
-      <div className="flex-center text-4xl mt-3 font-semibold">
+      <div className="flex justify-center text-center text-2xl sm:text-3xl lg:text-4xl mt-4 font-semibold">
         Get in Touch – Let’s Connect
       </div>
-      <div className="flex flex-col md:flex-row">
-        <div className="p-10">
-          <div className="p-2  bg-gray-950 w-150 flex-center  mt-5 ml-10 rounded-lg">
-            <form onSubmit={handlesubmit} ref={formRef} className="text-white">
-              <div className="mt-10 text-2xl">
-                <label>Your Name</label>
-              </div>
+
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row gap-10 mt-8 items-center">
+        {/* Form Section */}
+        <div className="w-full md:w-1/2 bg-gray-950 p-6 sm:p-10 rounded-lg shadow-lg">
+          <form
+            onSubmit={handlesubmit}
+            ref={formRef}
+            className="text-white space-y-6"
+          >
+            {/* Name */}
+            <div>
+              <label className="block text-lg sm:text-xl font-medium mb-2">
+                Your Name
+              </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="  Whats Your Good Name?"
-                className="text-white bg-gray-700/45 w-86 rounded-lg h-10"
+                placeholder="What's your good name?"
+                className="w-full text-white bg-gray-700/45 rounded-lg h-10 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formdata.name}
                 onChange={handlechange}
               />
-              <div>
-                <div className="mt-10 text-2xl">
-                  <label>Your Email</label>
-                </div>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="  Whats Your Email Address?"
-                  className="text-white bg-gray-700/45 w-86 rounded-lg h-10"
-                  value={formdata.email}
-                  onChange={handlechange}
-                />
-              </div>
-              <div>
-                <div>
-                  <div className="mt-10 text-2xl">
-                    <label>Your Message</label>
-                  </div>
-                  <textarea
-                    name="yourmsg"
-                    placeholder="How Can I Help You?"
-                    className="text-white bg-gray-700/45 w-86 rounded-lg h-45 p-3 align-top"
-                    value={formdata.yourmsg}
-                    onChange={handlechange}
-                  ></textarea>
-                </div>
-              </div>
-              <button
-                className="flex-center border-2 bg-white text-black rounded-lg w-56 h-10 ml-15 mt-8 font-semibold"
-                type="submit"
-                style={{ cursor: "pointer" }}
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block text-lg sm:text-xl font-medium mb-2">
+                Your Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="What's your email address?"
+                className="w-full text-white bg-gray-700/45 rounded-lg h-10 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formdata.email}
+                onChange={handlechange}
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label className="block text-lg sm:text-xl font-medium mb-2">
+                Your Message
+              </label>
+              <textarea
+                name="yourmsg"
+                placeholder="How can I help you?"
+                className="w-full text-white bg-gray-700/45 rounded-lg h-32 px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formdata.yourmsg}
+                onChange={handlechange}
+              ></textarea>
+            </div>
+
+            {/* Button */}
+            <button
+              className="w-full sm:w-auto px-6 py-2 border-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+              type="submit"
+              style={{ cursor: "pointer" }}
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+          </form>
         </div>
-        {/* Right 3-D Model */}
+
+        {/* Right 3D Model */}
         <figure>
           <div className="size-186 items-center  justify-center">
             <BottomContact />

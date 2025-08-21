@@ -7,21 +7,28 @@ export function Footer() {
   };
 
   return (
-    <div className="p-10">
-      <div className="flex-center justify-between ">
-        <div onClick={handleclick} style={{ cursor: "pointer" }}>
+    <div className="p-6 bg-gray-900 text-white">
+      <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <div
+          onClick={handleclick}
+          className="text-lg font-semibold cursor-pointer hover:underline"
+        >
           Visit My Blog
         </div>
-        <div className="flex ml-10 space-x-5 md:ml-60">
+        <div className="flex space-x-5">
           {socialImgs.map((t) => (
-            <div key={t.name}>
-              <a href={`${t.link}`}>
-                <img src={`${t.imgPath}`}></img>
-              </a>
-            </div>
+            <a key={t.name} href={t.link} target="_blank">
+              <img
+                src={t.imgPath}
+                alt={t.name}
+                className="w-6 h-6 hover:scale-110 transition"
+              />
+            </a>
           ))}
         </div>
-        <div>© 2025 Subham Kumar.All rights reserved</div>
+        <div className="text-sm text-gray-400 text-center md:text-right">
+          © 2025 Subham Kumar. All rights reserved.
+        </div>
       </div>
     </div>
   );

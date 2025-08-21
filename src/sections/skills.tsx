@@ -27,7 +27,7 @@ export function Skills() {
 
   return (
     <div id="skills">
-      <div className="p-10 flex flex-col md:flex-row justify-between ">
+      <div className="p-4 grid sm:grid-cols-2 md:grid-cols-5 ">
         {techStackIcons.map((t) => (
           <div
             key={t.name}

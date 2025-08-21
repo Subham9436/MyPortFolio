@@ -32,10 +32,10 @@ export function Hero() {
       <div>
         <div className="subtitle">
           <div className="text-6xl font-semibold p-10">
-            <div className="flex" id="text">
+            <div className="flex flex-col sm:flex-row" id="text">
               <h1>Shaping</h1>
               <span className="slide">
-                <span className="wrapper">
+                <span className="wrapper ">
                   {words.map((word, index) => (
                     <span
                       key={index}
@@ -56,9 +56,10 @@ export function Hero() {
               <br /> <span>that Deliver Results</span>
             </div>
           </div>
-          <span className="p-11 space-x-2 ">
-            Hi! , I am Subham , a developer based in India with coding interest{" "}
-          </span>
+          <p className="mx-4 sm:mx-12 text-center sm:text-left sm:flex sm:space-x-2 flex-wrap">
+            Hi! , I am <span className="font-semibold ml-1">Subham</span>, a
+            developer based in India with coding interest.
+          </p>
         </div>
         <a href="#work">
           <div style={{ cursor: "pointer" }}>
@@ -86,7 +87,7 @@ export function Hero() {
       </div>
       {/* Right Hero Model */}
       <figure>
-        <div className="hero-3d-layout mt-105  md:mt-45">
+        <div className="hero-3d-layout mt-136 sm:mt-88 md:mt-60 lg:mt-20">
           <Ranger />
         </div>
       </figure>

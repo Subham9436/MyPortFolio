@@ -3,22 +3,21 @@ import CountUp from "react-countup";
 // Use of React Countup
 export function EXP() {
   return (
-    <div className="p-10 mt-137 md:mt-11">
-      <div className="flex justify-between">
-        {counterItems.map((t) => (
-          <div
-            key={t.value}
-            className="p-10 mt-5 border-2 rounded-lg  w-85 bg-zinc-900"
-          >
-            <div>
-              <h1 className="text-3xl font-extrabold">
-                <CountUp suffix={t.suffix} end={t.value} />
-              </h1>
-            </div>
-            <div>{t.label}</div>
-          </div>
-        ))}
+   <div className="p-6 mt-120 md:mt-11">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    {counterItems.map((t) => (
+      <div
+        key={t.value}
+        className="p-6 border-2 rounded-lg bg-zinc-900 flex flex-col items-center text-center"
+      >
+        <h1 className="text-3xl font-extrabold">
+          <CountUp suffix={t.suffix} end={t.value} />
+        </h1>
+        <p className="mt-2">{t.label}</p>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 }

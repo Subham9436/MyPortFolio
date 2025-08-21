@@ -46,49 +46,64 @@ export function Projects() {
   }, []);
 
   return (
-    <div>
-      <div
-        className="flex justify-between p-2 md:flex-row flex-col items-center"
-        id="work"
-      >
-        <a href="https://github.com/Subham9436/Gsap-Cocktails-Mojito">
-          <div className="p-10">
-            <div className="w-176 rounded-lg ">
-              <img src="/images/Screenshot (93).png" />
-            </div>
-            <div className="mt-3 flex-center text-2xl">
-              <p>A UI for a Mocktail Website using GSAP Animations</p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div className="md:mr-9">
-            <div className="w-176 rounded-lg ">
-              <img src="/images/Screenshot (95).png" />
-            </div>
-            <div className="text-2xl mt-3 flex-center">
-              <p>A Complete TO-DO Application</p>
-            </div>
-          </div>
-        </a>
+    <div className="container mx-auto px-4">
+  {/* Top projects */}
+  <div
+    className="flex flex-col sm:flex-row justify-between gap-8 p-4"
+    id="work"
+  >
+    <a
+      href="https://github.com/Subham9436/Gsap-Cocktails-Mojito"
+      className="flex-1"
+    >
+      <div className="rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img
+          src="/images/Screenshot (93).png"
+          alt="Mocktail Website"
+          className="w-full h-auto object-cover"
+        />
       </div>
-      <div
-        className="flex  p-2 md:flex flex-row items-center justify-center"
-        id="workflow"
-      >
-        <div>
-          <a href="https://github.com/Subham9436/Real-Time-Chat-Bot">
-            <div className="p-10">
-              <div className="w-176 rounded-lg ">
-                <img src="/images/Screenshot (97).png" />
-              </div>
-              <div className="mt-3 flex-center text-2xl">
-                <p>Real Time Chat Application with Socket.io </p>
-              </div>
-            </div>
-          </a>
-        </div>
+      <div className="mt-3 text-center text-lg sm:text-xl font-medium">
+        <p>A UI for a Mocktail Website using GSAP Animations</p>
       </div>
-    </div>
+    </a>
+
+    <a href="" className="flex-1">
+      <div className="rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img
+          src="/images/Screenshot (95).png"
+          alt="To-Do Application"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      <div className="mt-3 text-center text-lg sm:text-xl font-medium">
+        <p>A Complete TO-DO Application</p>
+      </div>
+    </a>
+  </div>
+
+  {/* Bottom project */}
+  <div
+    className="flex justify-center p-4"
+    id="workflow"
+  >
+    <a
+      href="https://github.com/Subham9436/Real-Time-Chat-Bot"
+      className="max-w-lg w-full"
+    >
+      <div className="rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img
+          src="/images/Screenshot (97).png"
+          alt="Chat App"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      <div className="mt-3 text-center text-lg sm:text-xl font-medium">
+        <p>Real Time Chat Application with Socket.io</p>
+      </div>
+    </a>
+  </div>
+</div>
+
   );
 }
