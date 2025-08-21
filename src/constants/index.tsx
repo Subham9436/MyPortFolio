@@ -1,3 +1,9 @@
+export type techStackIcons = {
+  name: string;
+  modelPath: string;
+  scale?: number;
+  rotation: [number, number, number]; // enforce tuple
+};
 const navLinks = [
   {
     name: "Work",
@@ -130,7 +136,7 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
-];
+]as const;
 export {
   navLinks,
   words,
