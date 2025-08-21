@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 // Use of React Countup
 export function EXP() {
   return (
-   <div className="p-6 mt-120 md:mt-11">
+   <div className="p-6 mt-120 md:mt-24">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
     {counterItems.map((t) => (
       <div
