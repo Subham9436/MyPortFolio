@@ -1,10 +1,17 @@
+import toast from "react-hot-toast";
 import { socialImgs } from "../constants";
 
 export function Footer() {
+  const handleclick = () => {
+    toast("Under Construction !! 🙄 ");
+  };
+
   return (
     <div className="p-10">
       <div className="flex-center justify-between ">
-        <div>Visit My Blog</div>
+        <div onClick={handleclick} style={{ cursor: "pointer" }}>
+          Visit My Blog
+        </div>
         <div className="flex ml-10 space-x-5 md:ml-60">
           {socialImgs.map((t) => (
             <div key={t.name}>
