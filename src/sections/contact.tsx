@@ -11,7 +11,7 @@ export function Contact() {
     email: "",
     yourmsg: "",
   });
-
+  loading
   const handlechange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {

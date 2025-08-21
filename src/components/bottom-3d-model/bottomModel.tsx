@@ -3,7 +3,6 @@ import { Canvas } from "@react-three/fiber";
 import BottomModel from "./bottom3dmodel";
 
 export function BottomContact() {
-  const isTablet = false;
   return (
     <Canvas camera={{ position: [0, 5, 12], fov: 45 }}>
       <ambientLight intensity={1} />
