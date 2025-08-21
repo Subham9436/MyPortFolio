@@ -10,7 +10,7 @@ This project showcases my skills, projects, and journey as a developer.
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
-- **UI**: [React](https://react.dev/), [TailwindCSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/)
+- **UI**: [React](https://react.dev/), [TailwindCSS](https://tailwindcss.com/)
 - **3D & Animation**: [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction), [@react-three/drei](https://github.com/pmndrs/drei), [GSAP](https://greensock.com/gsap/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 
