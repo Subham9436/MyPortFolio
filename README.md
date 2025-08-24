@@ -2,7 +2,7 @@
 
 ![Portfolio Banner](./public/images/Screenshot%202025-08-21%20203905.png/)
 
-A modern **3D interactive developer portfolio** built with **Next.js, React Three Fiber, TailwindCSS, and GSAP**.  
+A modern **3D interactive developer portfolio** built with **React,React Three Fiber, TailwindCSS, and GSAP**.  
 This project showcases my skills, projects, and journey as a developer.
 
 ---
@@ -49,7 +49,7 @@ This project showcases my skills, projects, and journey as a developer.
 git clone https://github.com/Subham9436/MyPortFolio
 
 # Move into project folder
-cd portfolio
+cd MyPortFolio
 
 # Install dependencies
 npm install
